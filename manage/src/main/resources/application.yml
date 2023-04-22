@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/booth_sys
+    username: root
+    password: root
+  mail:
+    host: smtp.163.com
+    username: zjp_student@163.com
+    password: GNNAQEBWNSXNMBRZ
+
+server:
+  port: 9090

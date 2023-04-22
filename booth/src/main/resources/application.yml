@@ -1,0 +1,34 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/booth_sys
+    username: root
+    password: root
+  mvc:
+    static-path-pattern: /res/**
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+  servlet:
+    multipart:
+      max-file-size: 10MB
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+  mapper-locations: classpath:mapper/project/*Mapper.xml
+  type-aliases-package: com.zjp.entity
+logging:
+  level:
+    com.zjp.dao: trace
+weixin:
+  appid: 'wx73017da14028d662'
+  secret: '6d66e36ff1f64955b0fbb02bc3615e6c'
+
+logo-img:
+  request-path: /res/**
+  local-path: D:/idea/mybatis_test/images
+
+server:
+  port: 8080
