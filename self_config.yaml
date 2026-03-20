@@ -1,0 +1,13 @@
+
+
+proxies:
+  - name: "japan"       # 节点名字，随便写
+    type: trojan               # 固定写 trojan
+    server: losmangon.asia     # 你的域名/IP
+    port: 443                  # 你的端口
+    password: "1999Zjp6512"  # 引号里填密码
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: false    # 正常都写 false
+    udp: true                  # 开启UDP
